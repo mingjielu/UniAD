@@ -31,6 +31,5 @@ python -m torch.distributed.run \
     $(dirname "$0")/train.py \
     $CFG \
     ${@:3} \
-    --deterministic \
     --work-dir ${WORK_DIR} \
     2>&1 | tee ${WORK_DIR}logs/train.$T
